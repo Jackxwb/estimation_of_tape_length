@@ -1,0 +1,73 @@
+.BaseEstimate{
+  display: flex;
+  flex-direction: row;
+  //width: 800px;
+  width: 70vw;
+
+
+  &>div{
+    //width: 50%;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  .icon{
+    width: 30%;
+    img{
+      max-width: 100%;
+    }
+  }
+  .textRegion{
+    width: 60%;
+
+    .result{
+      display: flex;
+      align-items: baseline;
+
+      .smail{
+        color: var(--color-Secondary-01);
+      }
+      .big{
+        color: var(--color-success-01);
+        font-size: 5rem;
+        margin: 0 1rem;
+      }
+    }
+
+    .inputRegion{
+
+    }
+
+    .buttonRegion{
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+
+      button{
+        border-radius: 8px;
+        border: 1px solid transparent;
+        padding: 0.6em 1.2em;
+        font-size: 1em;
+        font-weight: 500;
+        font-family: inherit;
+        cursor: pointer;
+        transition: border-color 0.25s;
+        user-select: none;
+      }
+      button:hover {
+        background-color: var(--color-Dominant-02);
+      }
+      button:focus{
+        background-color: var(--color-Dominant-02);
+      }
+    }
+
+    .errText{
+      color: var(--color-Error-01);
+      //background-color: var(--color-Dominant-02);
+      background-color: buttonface;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin: 0.5rem 0;
+    }
+  }
+}

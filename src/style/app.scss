@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+input:focus, button:focus {
+  outline: none;
+}
+
+#app{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .modelSelect{
+    margin: 1rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: solid 1px var(--color-Secondary-01);
+    user-select: none;
+
+    .model{
+      border: solid 1px var(--color-Dominant-01);
+      padding: 0.5rem;
+      line-height: 1rem;
+      height: 1rem;
+      border-bottom-color: white;
+    }
+    .model+.model, .model+.model.nowSelected{
+      border-left: 0;
+    }
+    .model.nowSelected{
+      border: solid 1px var(--color-Dominant-01);
+      background: white;
+      border-bottom-color: white;
+    }
+  }
+
+  .modelRenderingBox{
+    flex-grow: 1;
+    margin: 0 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
