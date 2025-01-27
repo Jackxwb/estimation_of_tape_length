@@ -18,6 +18,7 @@ jobs:
         run: | #注意我这里是使用的yarn管理包，如果你使用的npm，请换成npm的命令：npm install和npm run build
           pwd
           ls
+          npm install -g pnpm
           pnpm -v
           pnpm install
           pnpm build
